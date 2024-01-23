@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+    <title>User Menu</title>
+</head>
+
+<body>
+    <form method="post">
+        <label>Username<input type="text" name="username" th:value="${username}"></label>
+        <label>Email<input type="text" name="email" th:value="${email}"></label>
+        <label>Password<input type="password" name="password"></label>
+        <label>Verify Password<input type="password" name="verify"></label>
+        <input type="submit" value="Create Account">
+    </form>
+</body>
+</html>
