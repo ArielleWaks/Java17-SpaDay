@@ -13,8 +13,8 @@ public class UserController {
 
     @GetMapping("/add")
     public String displayAddUserForm(Model model) {
-        model.addAttribute(new User());
-        return "user/add";
+        model.addAttribute(new User()); //binds the user object to the model/form; you have to tell Thymeleaf what object to use when it renders the page
+        return "user/add"; //this is pointing to the file you are rendering
     }
 
     @PostMapping
